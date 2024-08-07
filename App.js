@@ -4,7 +4,7 @@ export default function App() {
   return (
     <View style={styles.container}>
 
-      <View style={[styles.box, styles.backGroundCb]}>
+      <View style={[styles.box, styles.backGroundCb, styles.boxShadow]}>
         <Text style={styles.title}>Style sheet API</Text>
       </View>
 
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   },
 
   box: {
-     width: "100%",
+     width: 250,
      height: 100,
      paddingVertical: 10,
      marginVertical: 10,
@@ -46,5 +46,16 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 15,
     color: "red"
-  }
+  },
+
+  boxShadow: {
+    shadowColor: "#3333333",
+    shadowOffset: {
+      width: 6,
+      height: 6
+    },
+    shadowOpacity: 0.6,
+    textShadowRadius: 4,
+    shadowColor: "green"
+  },
 })
