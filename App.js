@@ -21,13 +21,18 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "lightblue",
-    padding: 60
+    padding: 10,
+    marginTop: 50
   },
 
   box: {
-     width: 100,
+     width: "100%",
      height: 100,
-     padding: 30
+     paddingVertical: 10,
+     marginVertical: 10,
+     borderWidth: 2,
+     borderColor: "pink",
+     borderRadius: 10
   },
 
   backGroundCb: {
